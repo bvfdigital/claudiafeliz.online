@@ -1,9 +1,10 @@
  :root{
     --body-bg:#ffffff;
-    --cta-bg:#e67e22;
+    --cta-bg:#00dd3c; /*#e67e22 */
+	--cta-bg-vaga:#ff0000;
     --cta-color:#ffffff;
     --fb-blue:#4080ff;
-    --footer-bg:#122433;
+    --footer-bg:#ffffff; /*#122433*/
     --dark-green:#075e54;
     --blue:#34b7f1;
     --blue-rgb:rgb(52, 184, 241);
@@ -85,14 +86,29 @@ p{
 .btn{
     background-color:var(--cta-bg);
     color:var(--cta-color);
-    border-radius:10px;
+    border-radius:20px;
     font-weight:700;
     font-size:1.5vw;
     padding:16px 24px;
+	text-align: center;
     text-decoration:none;
     text-shadow:1px 2px 2px rgba(0,0,0,.15);
     box-shadow:0 0 0 0 var(--cta-bg)
 }
+.btn-vaga{
+    background-color:var(--cta-bg-vaga);
+    color:var(--cta-color);
+    border-radius:10px;
+    font-weight:700;
+	font-size: clamp(1em, 1em + 1vw, 1.5vw);     /* font-size:1.5vw; */
+    padding:10px 10px;
+	margin-bottom: -12px; 
+	text-align: center;
+    text-decoration:none;
+    text-shadow:1px 2px 2px rgba(0,0,0,.15);
+    box-shadow:0 0 0 0 var(--cta-bg)
+}
+
 .btn-wrapper{
     transition:transform ease-in .25s
 }
@@ -835,4 +851,10 @@ tr{
      border: 1px solid #4adede;
      box-shadow: 0 0 6px 3px rgb(74 222 222 / 33%);
      border-radius: 4px;
+}
+.aviso-headline{
+	background: #ff0000;
+	color: #ffffff;
+	padding: 4px 1px 2px 1px;
+	margin-right: 5px;
 }
